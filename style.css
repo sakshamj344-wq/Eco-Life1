@@ -1,0 +1,167 @@
+/* Removes default spacing from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4fff4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+header {
+    background-color: #176b3a;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+/* Changes link color when hovered */
+nav a:hover {
+    color: #b7ffb7;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #176b3a, #75c96b);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Common section styling */
+.section {
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #176b3a;
+    margin-bottom: 20px;
+}
+
+/* Eco tips cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+    transition: transform 0.3s;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+button {
+    background-color: #176b3a;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0c4825;
+}
+
+/* Contact form */
+form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background-color: #176b3a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: #b7ffb7;
+}
+
+.github-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

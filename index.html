@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Green Earth - Environmental Awareness</title>
+
+    <!-- Connects the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <h1>🌍 Green Earth</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#tips">Eco Tips</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main hero section -->
+    <section id="home" class="hero">
+        <h2>Save Earth, Save Life</h2>
+        <p>Protect nature today for a better tomorrow.</p>
+
+        <!-- Button calls a JavaScript function -->
+        <button onclick="showMessage()">Join the Movement</button>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section">
+        <h2>About Environmental Awareness</h2>
+        <p>
+            Environmental awareness teaches us to protect nature,
+            reduce pollution, save water, and conserve energy.
+            Small actions can make a big difference.
+        </p>
+    </section>
+
+    <!-- Eco-friendly tips section -->
+    <section id="tips" class="section">
+        <h2>Eco-Friendly Tips</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🌳 Plant Trees</h3>
+                <p>Plant trees to improve air quality and protect wildlife.</p>
+            </div>
+
+            <div class="card">
+                <h3>♻️ Recycle Waste</h3>
+                <p>Reuse materials and separate waste for recycling.</p>
+            </div>
+
+            <div class="card">
+                <h3>💧 Save Water</h3>
+                <p>Turn off taps when not in use and avoid wasting water.</p>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Save Energy</h3>
+                <p>Switch off lights and appliances when not needed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+
+        <!-- Form submission is handled by JavaScript -->
+        <form onsubmit="sendMessage(event)">
+            <input type="text" id="name"
+                   placeholder="Enter your name" required>
+
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <textarea id="message"
+                      placeholder="Your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Displays the form response -->
+        <p id="response"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Green Earth | Protect Our Planet 🌱</p>
+        <a class="github-link" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.1c-3.1.67-3.75-1.32-3.75-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1.92 1.58 3.3 1.12.1-.72.4-1.2.72-1.48-2.47-.28-5.07-1.24-5.07-5.5 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.04-1.14 3.04-1.14.61 1.53.23 2.67.12 2.95.71.78 1.14 1.77 1.14 2.99 0 4.27-2.6 5.21-5.08 5.49.4.35.76 1.02.76 2.06v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/>
+            </svg>
+            <span>GitHub</span>
+        </a>
+    </footer>
+
+    <!-- Connects the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
